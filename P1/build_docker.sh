@@ -1,2 +1,2 @@
 docker build -t pjay_alpine_host -f pjay_alpine_host .
-docker build -t pjay_frr_router -f pjay_frr_router .
+docker build -t pjay_router_configure -f pjay_router_configure .
