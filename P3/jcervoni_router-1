@@ -1,0 +1,3 @@
+#! /bin/sh
+
+vtysh -f /tmp/jcervoni_router-1_vty_conf

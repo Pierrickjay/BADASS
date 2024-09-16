@@ -53,3 +53,10 @@ The second part is about configuring a [VXLAN](https://en.wikipedia.org/wiki/Vir
 <summary>Part 3</summary>
 </details>
 
+<details>
+<summary>Glossary</summary>
+
++ **VXLAN**: **V**irtual e**X**tensible **L**ocal-**A**rea **N**etwork
++ **EVPN**: **E**thernet VPN
++ **BUM**: **B**roadcast unknown **U**nicast **M**ulticast
+</details>
