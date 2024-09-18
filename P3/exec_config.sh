@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Update configuration of docker containers
 for i in $(docker ps -q)
 do
     hostname=$(docker exec $i hostname)

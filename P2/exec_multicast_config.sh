@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#  update configuration of router containers only because we don't need to
+#  modify host configuration
 for i in $(docker ps -q)
 do
     hostname=$(docker exec $i hostname)

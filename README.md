@@ -74,9 +74,24 @@ Here an example of OSPF implementation, with one area containing the router refl
 <details>
 <summary>Glossary</summary>
 
-+ **OSFP**: **O**pen **S**hortest **P**ath **F**irst
++ **host**:
+    - endpoint on a natwork. Could be a computer, a virtual machine, a phone...
++ **VNI**: **V**irtual **N**etwork **I**dentifier
+    - VNI is the identifier of a virtual network (in our case, 10)
++ **bridge**:
+    - a bridge is network device that allow communication between different networks
++ **loopback address**:
+    - address that doesn't depends of a physical network. Very stable, in BGP it is usefull for internal data exchange between switches.
 + **VXLAN**: **V**irtual e**X**tensible **L**ocal-**A**rea **N**etwork
-+ **BGP**: **B**ordel **G**ate **P**rotocol
-+ **EVPN**: **E**thernet VPN
+    - virtual network that will encapsulate layer 2 data into UDP packets. By doin this, it allows to have 16 millions virtual networks (against 4096 for a VLAN)
++ **VTEP**: **V**XLAN **T**unnel **E**nd **P**oint
+    - VXLAN point connected to a traffic. VTEPs are responsible for encapsulation and decapsulation of network traffic
++ **OSFP**: **O**pen **S**hortest **P**ath **F**irst
+    - it's an **I**nterior **G**ateway **P**rotocol that gather link state information from routers and constructs a topology map of the network and determine shortest path to reach an address. It also updates link state on router by sending them LSA packets.
 + **BUM**: **B**roadcast unknown **U**nicast **M**ulticast
+    - network traffic methods of sending
++ **BGP**: **B**order **G**ateway **P**rotocol
+    - path-vector routing protocol. Here, it is used for routing within an autonomous system
++ **EVPN**: **E**thernet VPN
+    - transports ethernet traffic as a virtual private network. Here, BGP EVPN will expose VNI and MAC addresses inside the internal BGP
 </details>

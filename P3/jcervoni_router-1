@@ -1,5 +1,7 @@
 #! /bin/sh
 
+# configuration of spine as router-reflector for BGP EVPN
+# also configure OSPF area
 vtysh << EOF
 
 configure terminal
