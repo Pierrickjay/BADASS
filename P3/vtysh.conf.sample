@@ -1,0 +1,7 @@
+!
+! Sample configuration file vor vtysh
+!
+!service integrated-vtysh-config
+!hostname zebra-router
+!username root nopassword
+!
